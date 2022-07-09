@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@500&display=swap');
+
+:root{
+    --md-dark-color: #1d1d1d;
+    --dark-color: #171717;
+    --light-dark-color: #292929;
+}
+
+
+*{
+    margin: 0;
+}
+
+#outer-container{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(30, 30, 30);
+
+}
+
+#outer-container h1{
+    width: 85%;
+    height: 10%;
+    margin-top: 10px;
+    color: #d4aa11;
+    font-size: 3rem;
+    font-family: 'Radio Canada', sans-serif;
+    text-align: center;
+}
+
+#search-list{
+    width: 35%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+    margin-top: 20px;
+    border: 1px solid rgb(206, 201, 201);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar{
+    width:3px;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-track{
+    background: transparent;
+    border-radius: 5px;
+
+
+}
+
+::-webkit-scrollbar-thumb{
+    background: rgb(85, 84, 83);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #555;
+    border-radius: 5px;
+}
+
+
+.fav-movie{
+    width:95%;
+    height: 100px;
+    display: flex;
+    border: 0.5px solid rgb(184, 184, 184);
+    margin: 5px;
+    cursor: pointer;
+}
+
+.fav-img{
+    height: 100%;
+    width: 70px;
+}
+
+
+.fav-title{
+    color: white;
+    margin: 20px;
+}
+
+
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+.modal-content{
+    background-color: #2c2c2c;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #2d2c2c;
+    width: 80%;
+    height: 75vh;
+}
+
+.close{
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus{
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+
+.modal-content{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 0px;
+    overflow: scroll;
+}
+
+
+.result-container{
+    padding: 3rem 0;
+}
+
+.movie-poster img{
+    max-width: 300px;
+    margin: 0 auto;
+    border: 4px solid #fff;
+
+
+}
+
+
+.movie-info{
+    text-align: center;
+    color: #fff;
+    padding-top: 3rem;
+}
+
+
+.movie-title{
+    font-size: 2rem;
+    color: var(--light-dark-color);
+
+}
+
+
+.movie-misc-info{
+    list-style-type: none;
+    display: --webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 1rem;
+
+
+}
+
+.movie-info .year{
+    font-weight: 500;
+
+}
+.movie-info .rated{
+    background-color: var(--md-dark-color);
+    padding: 0.4rem;
+    margin: 0 0.4rem;
+    border-radius: 3px;
+    font-weight: 600;
+}
+
+.movie-info .released{
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+.movie-info .writer{
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+.movie-info .actors{
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+.movie-info .plot{
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+.movie-info .language{
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+.movie-info .awards{
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
